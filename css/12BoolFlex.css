@@ -10,12 +10,15 @@
     border: 1px solid blue;
 }
 .debug [class*="col"]{
-    min-height: 20px;
+    min-height: 40px;
     border: 1px solid white;
     background-color: #006cfa;
     text-align: center;
+    line-height: 40px;
     color: white;
-    padding: 20px;
+}
+.debug [class*="offset"]{
+    border: 0;
 }
 .debug .nested-col{
     background-color: #00e165;
@@ -23,7 +26,7 @@
 /* framework */
 .container{
     max-width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 .row{
     display: flex;
@@ -32,6 +35,7 @@
 /* columns */
 .col{
     display: flex;
+    justify-content: center;
     flex-grow: 1;
     flex-basis: 0;
 }
@@ -70,4 +74,42 @@
 }
 .col-12{
     flex-basis: calc((100% / 12) * 12);
+}
+
+/* offset rules */
+.col-offset-1{
+    margin-left: calc((100% / 12) * 1);
+}
+.col-offset-2{
+    margin-left: calc((100% / 12) * 2);
+}
+.col-offset-3{
+    margin-left: calc((100% / 12) * 3);
+}
+.col-offset-4{
+    margin-left: calc((100% / 12) * 4);
+}
+.col-offset-5{
+    margin-left: calc((100% / 12) * 5);
+}
+.col-offset-6{
+    margin-left: calc((100% / 12) * 6);
+}
+.col-offset-7{
+    margin-left: calc((100% / 12) * 7);
+}
+.col-offset-8{
+    margin-left: calc((100% / 12) * 8);
+}
+.col-offset-9{
+    margin-left: calc((100% / 12) * 9);
+}
+.col-offset-10{
+    margin-left: calc((100% / 12) * 10);
+}
+.col-offset-11{
+    margin-left: calc((100% / 12) * 11);
+}
+.col-offset-12{
+    margin-left: calc((100% / 12) * 12);
 }
