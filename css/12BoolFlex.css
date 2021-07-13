@@ -17,6 +17,9 @@
     color: white;
     padding: 20px;
 }
+.debug .nested-col{
+    background-color: #00e165;
+}
 /* framework */
 .container{
     max-width: 100%;
@@ -28,6 +31,7 @@
 }
 /* columns */
 .col{
+    display: flex;
     flex-grow: 1;
     flex-basis: 0;
 }
