@@ -9,7 +9,7 @@
     min-height: 50px;
     border: 1px solid blue;
 }
-.debug [class*="col-"]{
+.debug [class*="col"]{
     min-height: 20px;
     border: 1px solid white;
     background-color: #006cfa;
@@ -27,6 +27,10 @@
     flex-wrap: wrap;
 }
 /* columns */
+.col{
+    flex-grow: 1;
+    flex-basis: 0;
+}
 .col-1{
     flex-basis: calc((100% / 12) * 1);
 }
